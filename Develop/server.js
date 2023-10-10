@@ -62,7 +62,26 @@ app.get('/api/notes', (req, res) => {
       });
     });
   });
-
+  
+  app.delete('/api/notes/:id', (req, res) => {
+    fs.readFile('./db/db.json', 'utf8', (err, data) => {
+      if (err) {
+        console.error(err);
+        return res.status(500).send('Error reading file');
+      }
+  
+      const notes = JSON.parse(data);
+      const filteredNotes = notes.filter((note) => note.id !== parseInt(req.params.id));
+  
+      fs.writeFile('./db/db.json', JSON.stringify(filteredNotes, null, 2), (err) => {
+        if (err) {
+          console.error(err);
+          return res.status(500).send('Error writing file');
+        }
+        res.json(filteredNotes);
+      });
+    });
+  });
 app.listen(PORT, () =>
   console.log(`App listening at http://localhost:${PORT}`)
 );
