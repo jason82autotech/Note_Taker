@@ -46,4 +46,6 @@ You are required to submit BOTH of the following for review:
 * A Screenshot of the functional application.
 ![screenshot of application](./Develop/public/images/note_taker_screenshot.png)
 
+* I used the knowledge I have gained so far in this class, help from classmated, tutors and I used Ask Bcs for a ton of help. I used You Tube, W3 Schools, Full stack bog, Mdn Docs and the Cody Ai to get this assignment completed!
+
 
