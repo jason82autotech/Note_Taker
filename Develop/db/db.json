@@ -1,9 +1,5 @@
 [
   {
-    "title": "Test Title",
-    "text": "Test text"
-  },
-  {
     "id": 1,
     "title": "Note 1",
     "text": "This is note 1"
@@ -19,8 +15,8 @@
     "text": "December 7th, OHSU Spine and Orthopedic"
   },
   {
-    "id": 6,
-    "title": "Make Dinner",
-    "text": "Every dang day!"
+    "id": 4,
+    "title": "Notes are working",
+    "text": "I can delete them too!"
   }
 ]
