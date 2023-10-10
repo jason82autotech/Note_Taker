@@ -2,5 +2,12 @@
     {
         "title":"Test Title",
         "text":"Test text"
+    },
+
+    {
+      "id": 1, 
+      "title": "Note 1",
+      "text": "This is note 1"
     }
-]
+  ]
+  
